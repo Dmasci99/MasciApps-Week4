@@ -47,11 +47,21 @@
       <HintPath>..\packages\AspNet.ScriptManager.jQuery.2.2.3\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -70,15 +80,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\aboutme-header.jpg" />
+    <Content Include="Assets\students-header.jpg" />
     <Content Include="Assets\contact.jpg" />
-    <Content Include="Assets\contactme-header.jpg" />
+    <Content Include="Assets\contact-header.jpg" />
     <Content Include="Assets\dashboard.jpg" />
     <Content Include="Assets\dekoning.jpg" />
     <Content Include="Assets\dogdayscamp.jpg" />
     <Content Include="Assets\liveinluxury.jpg" />
-    <Content Include="Assets\projects-header.jpg" />
-    <Content Include="Assets\services-header.jpg" />
+    <Content Include="Assets\courses-header.jpg" />
+    <Content Include="Assets\departments-header.jpg" />
     <Content Include="Assets\slide1.jpg" />
     <Content Include="Assets\slide2.jpg" />
     <Content Include="Assets\slide3.jpg" />
@@ -89,6 +99,16 @@
     <Content Include="Courses.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Departments.aspx" />
+    <Content Include="Models\ContosoModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ContosoModel.edmx</DependentUpon>
+      <LastGenOutput>ContosoModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ContosoModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ContosoModel.edmx</DependentUpon>
+      <LastGenOutput>ContosoModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\moby.js" />
     <Content Include="Students.aspx" />
     <Content Include="UserControls\Footer.ascx" />
@@ -99,6 +119,13 @@
     <Content Include="Content\partials\moby.less" />
     <Content Include="Content\partials\responsive.less" />
     <Content Include="Interior.Master" />
+    <EntityDeploy Include="Models\ContosoModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ContosoModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ContosoModel.edmx.diagram">
+      <DependentUpon>ContosoModel.edmx</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -160,6 +187,33 @@
     <Compile Include="Interior.Master.designer.cs">
       <DependentUpon>Interior.Master</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContosoModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContosoModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContosoModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContosoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContosoModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContosoModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Course.cs">
+      <DependentUpon>ContosoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Department.cs">
+      <DependentUpon>ContosoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Enrollment.cs">
+      <DependentUpon>ContosoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Student.cs">
+      <DependentUpon>ContosoModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Students.aspx.cs">
       <DependentUpon>Students.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -197,7 +251,13 @@
       <DependentUpon>InteriorHeader.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
