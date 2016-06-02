@@ -7,40 +7,38 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MasciApps_Week4.UserControls
-{
-
-
-    public partial class Header
-    {
-
+namespace MasciApps_Week4.UserControls {
+    
+    
+    public partial class Header {
+        
         /// <summary>
-        /// about control.
+        /// students control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor about;
-
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor students;
+        
         /// <summary>
-        /// projects control.
+        /// courses control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor projects;
-
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor courses;
+        
         /// <summary>
-        /// services control.
+        /// departments control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor services;
-
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor departments;
+        
         /// <summary>
         /// contact control.
         /// </summary>

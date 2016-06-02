@@ -26,9 +26,11 @@
     <dm:IntHeader ID="InteriorHeader" runat="server" />
 
     <!-- Content -->
-    <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        <!-- .aspx pages are injected here -->
-    </asp:ContentPlaceHolder>
+    <div class="interior-page">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            <!-- .aspx pages are injected here -->
+        </asp:ContentPlaceHolder>
+    </div>    
 
     <!-- Footer -->
     <dm:Footer ID="MainFooter" runat="server" />

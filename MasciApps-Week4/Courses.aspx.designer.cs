@@ -11,7 +11,7 @@ namespace MasciApps_Week4
 {
 
 
-    public partial class Projects
+    public partial class Courses
     {
     }
 }

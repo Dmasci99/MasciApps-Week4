@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace MasciApps_Week4
 {
-    public partial class Projects : System.Web.UI.Page
+    public partial class Departments : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

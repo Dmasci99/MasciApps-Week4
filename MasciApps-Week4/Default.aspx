@@ -21,39 +21,39 @@
 				    <div class="slide active" id="slide1" style="background-image: url(Assets/slide1.jpg);">
 					    <div class="container">
 						    <div class="heading">
-							    <h2>About Me</h2>
+							    <h2>Students</h2>
 						    </div><!-- heading -->
 						    <div class="text">
-							    <p>Come learn a little bit about me! I'm interesting, I promise.</p>
+							    <p>Lorem Ipsum...</p>
 						    </div><!-- text -->
 						    <div class="button">
-							    <a href="About.aspx">Read More</a>
+							    <a href="Students.aspx">Read More</a>
 						    </div><!-- button -->
 					    </div><!-- container -->
 				    </div><!-- slide1 -->
 				    <div class="slide" id="slide2" style="background-image: url(Assets/slide2.jpg);">
 					    <div class="container">
 						    <div class="heading">
-							    <h2>Portfolio</h2>
+							    <h2>Courses</h2>
 						    </div><!-- heading -->
 						    <div class="text">
-							    <p>Visit some Web Applications I have worked on...</p>
+							    <p>Lorem Ipsum...</p>
 						    </div><!-- text -->
 						    <div class="button">
-							    <a href="Projects.aspx">See More</a>
+							    <a href="Courses.aspx">See More</a>
 						    </div><!-- button -->
 					    </div><!-- container -->
 				    </div><!-- slide2 -->
 				    <div class="slide" id="slide3" style="background-image: url(Assets/slide3.jpg);">
 					    <div class="container">
 						    <div class="heading">
-							    <h2>Services</h2>
+							    <h2>Departments</h2>
 						    </div><!-- heading -->
 						    <div class="text">
-							    <p>Come check out what MasciApps can offer!</p>
+							    <p>Lorem Ipsum...</p>
 						    </div><!-- text -->
 						    <div class="button">
-							    <a href="Services.aspx">Learn More</a>
+							    <a href="Departments.aspx">Learn More</a>
 						    </div><!-- button -->
 					    </div><!-- container -->
 				    </div><!-- slide3 -->

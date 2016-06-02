@@ -22,18 +22,11 @@
         <!-- Main Menu -->
         <nav id="header-nav">
 	        <ul class="menu">
-                <li id="home"><a href="../Default.aspx">Home</a></li>
-		        <li><a runat="server" id="about" href="../About.aspx">About</a></li>
-		        <li><a runat="server" id="projects" href="../Projects.aspx">Projects</a>
-			        <ul class="sub-menu">
-				        <li><a href="http://dekoningemc.ca/">Dekoning Mechanical</a></li>
-				        <li><a href="http://www.turnkeybioscience.com/">Turnkey Bioscience</a></li>
-				        <li><a href="http://www.liveinluxury.ca/">LiveInLuxury</a></li>
-				        <li><a href="http://dogdayscamp.com/">DogDaysCamp</a></li>
-			        </ul>
-		        </li>						
-		        <li><a runat="server" id="services" href="../Services.aspx">Services</a></li>	
-		        <li><a runat="server" id="contact" href="../Contact.aspx">Contact</a></li>	
+                <li id="home"><a href="../Default.aspx"><i class="fa fa-lg fa-home"></i> Home</a></li>
+                <li><a href="../Students.aspx" runat="server" id="students"><i class="fa fa-lg fa-graduation-cap"></i> Students</a></li>
+                <li><a href="../Courses.aspx" runat="server" id="courses"><i class="fa fa-lg fa-book"></i> Courses</a></li>
+                <li><a href="../Departments.aspx" runat="server" id="departments"><i class="fa fa-lg fa-puzzle-piece"></i> Departments</a></li>
+                <li><a href="../Contact.aspx" runat="server" id="contact"><i class="fa fa-lg fa-phone"></i> Contact</a></li>
 		        <div class="clear-float"></div><!--clear-float-->				
 	        </ul>
         </nav><!--.header-nav-->

@@ -24,10 +24,10 @@ namespace MasciApps_Week4.UserControls
         {
             switch (Page.Title)
             {
-                case "About Me": about.Attributes.Add("class", "active"); break;
-                case "Projects": projects.Attributes.Add("class", "active"); break;
-                case "Services": services.Attributes.Add("class", "active"); break;
-                case "Contact Me": contact.Attributes.Add("class", "active"); break;
+                case "Students": students.Attributes.Add("class", "active"); break;
+                case "Courses": courses.Attributes.Add("class", "active"); break;
+                case "Departments": departments.Attributes.Add("class", "active"); break;
+                case "Contact": contact.Attributes.Add("class", "active"); break;
             }
         }
     }

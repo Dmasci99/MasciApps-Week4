@@ -70,7 +70,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="Assets\aboutme-header.jpg" />
     <Content Include="Assets\contact.jpg" />
     <Content Include="Assets\contactme-header.jpg" />
@@ -87,10 +86,11 @@
     <Content Include="Assets\turnkey.jpg" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\custom.css" />
+    <Content Include="Courses.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="Projects.aspx" />
+    <Content Include="Departments.aspx" />
     <Content Include="Scripts\moby.js" />
-    <Content Include="Services.aspx" />
+    <Content Include="Students.aspx" />
     <Content Include="UserControls\Footer.ascx" />
     <Content Include="packages.config" />
     <Content Include="Scripts\custom.js" />
@@ -125,19 +125,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -146,6 +146,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Departments.aspx.cs">
+      <DependentUpon>Departments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Departments.aspx.designer.cs">
+      <DependentUpon>Departments.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Interior.Master.cs">
       <DependentUpon>Interior.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -153,19 +160,12 @@
     <Compile Include="Interior.Master.designer.cs">
       <DependentUpon>Interior.Master</DependentUpon>
     </Compile>
-    <Compile Include="Projects.aspx.cs">
-      <DependentUpon>Projects.aspx</DependentUpon>
+    <Compile Include="Students.aspx.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Projects.aspx.designer.cs">
-      <DependentUpon>Projects.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Services.aspx.cs">
-      <DependentUpon>Services.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Services.aspx.designer.cs">
-      <DependentUpon>Services.aspx</DependentUpon>
+    <Compile Include="Students.aspx.designer.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
@@ -209,7 +209,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>20329</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
